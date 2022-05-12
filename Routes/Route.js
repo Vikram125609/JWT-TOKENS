@@ -4,5 +4,5 @@ const Home = require("../Controller/Render/Home");
 const router = express.Router();
 router.get('/', Home().index);
 router.post('/', Auth().register);
-router.post('/:id',Auth().login);
+router.post('/login',Auth().login);
 module.exports = router;
